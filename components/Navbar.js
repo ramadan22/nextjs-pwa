@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Navbar() {
   return (
@@ -21,17 +22,10 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
+              <Link href="/" className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <Link href="/page2" className="nav-link">page 2</Link>
             </li>
           </ul>
           <form className="d-flex">
